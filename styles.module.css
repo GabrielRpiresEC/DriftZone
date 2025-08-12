@@ -205,20 +205,22 @@ body {
 
 .carousel {
   position: relative;
-  max-width: 700px;
+  width: 100%;
+  max-width: 900px; /* aumentei para dar mais destaque */
   margin: 0 auto;
   overflow: hidden;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  transition: transform 0.5s cubic-bezier(.77, 0, .18, 1);
+  width: 100%;
 }
 
 .carousel-track img {
-  width: 700px;
-  height: 400px;
-  object-fit: cover;
+  flex: 0 0 100%; /* cada imagem ocupa toda a largura do carrossel */
+  height: 500px; /* altura maior para mais impacto */
+  object-fit: cover; /* preenche todo o espaço mantendo proporção */
   border-radius: 16px;
   box-shadow: var(--shadow);
   user-select: none;
@@ -273,6 +275,7 @@ body {
   opacity: 1;
   background: var(--accent);
 }
+
 
 /* Técnicas */
 .tecnicas {
