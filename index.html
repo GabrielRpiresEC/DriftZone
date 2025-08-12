@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DriftZone - Domine a Arte do Drift</title>
+  <link rel="stylesheet" href="styles.module.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">DriftZone</div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#tecnicas">Técnicas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>Domine a Arte do Drift</h1>
+        <p>Velocidade, controle e adrenalina nas curvas!</p>
+        <a href="#galeria" class="btn">Explore Agora</a>
+      </div>
+    </section>
+
+    <section class="curiosidades" id="sobre">
+      <h2>Curiosidades sobre Drift</h2>
+      <div class="facts">
+        <div class="fact">
+          <span class="icon">&#128663;</span>
+          <h3>Origem Japonesa</h3>
+          <p>O drift surgiu nas montanhas do Japão nos anos 1970, popularizado por pilotos como Keiichi Tsuchiya.</p>
+        </div>
+        <div class="fact">
+          <span class="icon">&#9889;</span>
+          <h3>Controle Extremo</h3>
+          <p>Drift exige precisão e controle total do carro, tornando-se uma das técnicas mais desafiadoras do automobilismo.</p>
+        </div>
+        <div class="fact">
+          <span class="icon">&#127937;</span>
+          <h3>Esporte Mundial</h3>
+          <p>Hoje, campeonatos de drift acontecem em diversos países, atraindo fãs e pilotos do mundo todo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria" id="galeria">
+      <h2>Galeria de Drift</h2>
+      <div class="carousel">
+        <button class="carousel-btn prev" id="prev">&#10094;</button>
+        <div class="carousel-track" id="carousel-track">
+          <img src="fotos/drift1_mustang.jpg" alt="Drift 1" />
+          <img src="fotos/drift2_350z.jpg" alt="Drift 2" />
+          <img src="fotos/drift3_bmw.jpg" alt="Drift 3" />
+          <img src="fotos/drift4_s15.jpg" alt="Drift 4" />
+        </div>
+        <button class="carousel-btn next" id="next">&#10095;</button>
+        <div class="carousel-indicators" id="carousel-indicators"></div>
+      </div>
+    </section>
+
+    <section class="tecnicas" id="tecnicas">
+      <h2>Técnicas de Drift</h2>
+      <div class="tecnicas-list">
+        <div class="tecnica">
+          <img src="fotos/tecnica1.jpg" alt="Feint Drift" />
+          <h3>Feint Drift</h3>
+          <p>Consiste em jogar o carro para o lado oposto da curva antes de iniciar o drift, criando instabilidade controlada.</p>
+        </div>
+        <div class="tecnica">
+          <img src="fotos/tecnica2.jpg" alt="Clutch Kick" />
+          <h3>Clutch Kick</h3>
+          <p>O piloto pisa na embreagem e acelera, soltando rapidamente para causar perda de tração nas rodas traseiras.</p>
+        </div>
+        <div class="tecnica">
+          <img src="fotos/tecnica3.jpg" alt="Power Over" />
+          <h3>Power Over</h3>
+          <p>Consiste em acelerar bruscamente na saída da curva, fazendo as rodas traseiras perderem aderência.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <h2>Fale Conosco</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+          <span class="error" id="error-nome"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error" id="error-email"></span>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          <span class="error" id="error-mensagem"></span>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" /></a>
+      <a href="#" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" /></a>
+      <a href="#" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" /></a>
+    </div>
+    <p>&copy; 2025 DriftZone. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
